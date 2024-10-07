@@ -1,0 +1,13 @@
+# Ignore artifacts:
+.husky
+cicd
+deployment
+public
+node_modules
+.next
+.gitlab-ci.yml
+tsconfig.json
+postcss.config.js
+package.json
+package-lock.json
+next.config.js

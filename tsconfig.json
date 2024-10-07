@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "styles": ["./src/styles/globals.module.scss"],
+      "css/*": ["./src/styles/*"],
+      "components/*": ["./src/components/*"],
+      "tools": ["./src/tools/tools.tsx"],
+      "vars": ["./src/styles/variables.scss"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/api/getProvincesData/route.js"
+, "src/app/(main)/_components/complain/complain.typests"  ],
+  "exclude": [
+    "node_modules",
+    "src/api",
+    "src/auth",
+    "src/components",
+    "src/styles",
+    "src/tools",
+    "src/types"
+  ]
+}
